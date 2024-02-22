@@ -186,8 +186,9 @@ footer > div {
     padding: 6px 30px;
     border-radius: 16px;   
 }
-.big-btn
-.small-btn
+/* .big-btn
+.small-btn */
+
 /* media query */
 @media screen and (min-width: 1200px){
     header nav:hover ul {
@@ -217,4 +218,7 @@ footer > div {
     .img-content img {
         width: 200px;
     }
+}
+@media screen and (min-width: 768px) {
+    
 }
