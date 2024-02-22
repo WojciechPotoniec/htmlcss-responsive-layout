@@ -35,9 +35,54 @@ a {
     text-decoration: none;
     color: var(--color-bg-main);
 }
+img {
+    width: 100%;
+    display: block;
+}
 .container {
     max-width: 100%;
     padding: 20px;
+}
+p {
+    line-height: 1.8;
+    padding-bottom: 20px;
+}
+h2 {
+    margin: 20px 0;
+}
+
+/* text utility */ 
+.text-light {
+    color: var(--color-bg-main);
+}
+.text-contrast {
+    color: var(--color-free-text);
+}
+.text-violet{
+    color: var(--color-bg-section);
+}
+.text-blue {
+    color: var(--color-bg-header);
+}
+.text-center {
+    text-align: center;
+}
+
+/* border */
+.small-rounded {
+    border-radius: 20px;
+}
+.big-rounded {
+    border-radius: 50px;
+}
+.circle {
+    background-color: var(--color-bg-section);
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.icon {
+    font-size: 4em;
 }
 
 /* header */
@@ -48,7 +93,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 40px;
+    padding: 10px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -88,7 +133,24 @@ section {
 .even {
     background-color: var(--color-bg-section);
 }
-
+.bg-light {
+    background-color: var(--color-bg-card);
+}
+.bg-white {
+    background-color: var(--color-bg-main);
+}
+.testimonial {
+    width: 60%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.testimonial img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 /* footer */
 footer {
     background-color: var(--color-bg-footer);
@@ -99,15 +161,21 @@ footer {
 footer > div {
     padding: 20px;
 }
-
+.card {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.img-content {
+    width: 80%;
+    margin: 0 auto;
+}
+#features .container > .card{
+    padding-bottom: 0;
+}
 /* utility */
-.text-color {
-    color: var(--color-bg-main);
+.d-flex {
+    display: flex;
 }
-img {
-    width: 100%;
-}
-
 /* media query */
 @media screen and (min-width: 1200px){
     header nav:hover ul {
@@ -122,5 +190,19 @@ img {
     }
     i.fa-solid.fa-bars {
         display: none;
+    }
+    #features .container > .card {
+        display: flex;
+    }
+    .text-content {
+        width: 60%;
+        padding-bottom: 20px;
+    }
+    .img-content {
+        width: 40%;
+        /* align-self: flex-end; */
+    }
+    .img-content img {
+        width: 200px;
     }
 }
