@@ -47,7 +47,7 @@ p {
     line-height: 1.8;
     padding-bottom: 20px;
 }
-h2 {
+h2, h3 {
     margin: 20px 0;
 }
 
@@ -57,6 +57,7 @@ h2 {
 }
 .text-contrast {
     color: var(--color-free-text);
+    font-size: 3em;
 }
 .text-violet{
     color: var(--color-bg-section);
@@ -80,7 +81,6 @@ h2 {
     padding: 15px;
     border-radius: 50%;
 }
-
 .icon {
     font-size: 4em;
 }
@@ -120,7 +120,6 @@ header nav a {
 main {
     padding-top: 70px;
 }
-
 nav {
     padding: 20px;
 }
@@ -140,7 +139,7 @@ section {
     background-color: var(--color-bg-main);
 }
 .testimonial {
-    width: 60%;
+    width: 50%;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     overflow: hidden;
@@ -150,6 +149,12 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.about {
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    overflow: hidden;
 }
 /* footer */
 footer {
@@ -176,6 +181,13 @@ footer > div {
 .d-flex {
     display: flex;
 }
+.btn {
+    background-color: var(--color-bg-section);
+    padding: 6px 30px;
+    border-radius: 16px;   
+}
+.big-btn
+.small-btn
 /* media query */
 @media screen and (min-width: 1200px){
     header nav:hover ul {
