@@ -1,3 +1,4 @@
+/* reset */
 * {
     margin: 0;
     padding: 0;
@@ -7,4 +8,42 @@ body {
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+:root {
+    --color-bg-header: #0084fd;
+    --color-bg-card: #b5ddff;
+    --color-bg-section: #9792e4;
+    --color-bg-main: #ffffff;
+    --color-free-text: #fdc15f;
+    --color-bg-footer: #333333;
+}
+
+/* debug */
+.debug {
+    border: 1px solid red;
+}
+section {
+    padding: 20px;
+}
+/* general rules */
+ul {
+    list-style: none;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    background-color: var(--color-bg-header);
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* section */
+.even {
+    background-color: var(--color-bg-section);
 }
