@@ -186,8 +186,15 @@ footer > div {
     padding: 6px 30px;
     border-radius: 16px;   
 }
-/* .big-btn
-.small-btn */
+.small-btn {
+    padding: 8px 19px;
+    border-radius: 16px;
+}
+.big-btn {
+    padding: 8px 19px;
+    border-radius: 16px;
+}
+
 
 /* media query */
 @media screen and (min-width: 1200px){
@@ -220,5 +227,21 @@ footer > div {
     }
 }
 @media screen and (min-width: 768px) {
+    header nav:hover ul {
+        display: flex;
+    }
+    header nav ul {
+        position: static;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+    }
+    i.fa-solid.fa-bars {
+        display: none;
+    }
     
+    #features .card {
+        width: calc(100% /3 * 2 - 20px);
+    }
 }
