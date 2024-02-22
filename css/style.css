@@ -4,11 +4,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    font-family: "PT Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
 :root {
     --color-bg-header: #0084fd;
     --color-bg-card: #b5ddff;
@@ -22,28 +17,110 @@ body {
 .debug {
     border: 1px solid red;
 }
-section {
-    padding: 20px;
-}
 /* general rules */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--color-bg-main);
+    color: var(--color-bg-footer);
+}
 ul {
     list-style: none;
 }
+a {
+    text-decoration: none;
+    color: var(--color-bg-main);
+}
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 100%;
+    padding: 20px;
 }
 
 /* header */
 header {
     background-color: var(--color-bg-header);
-}
-header nav {
+    color: var(--color-bg-main);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+header nav ul {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    background-color: var(--color-bg-header);
+    display: none;
+}
+header nav {
+    position: relative;
+    flex-shrink: 0;
+}
+header nav:hover ul {
+    display: block;
+}
+header nav a {
+    display: block;
+    padding: 5px 10px;
+}
+main {
+    padding-top: 70px;
+}
+
+nav {
+    padding: 20px;
+}
+section {
+    padding: 20px;
+    scroll-margin-top: 75px;
 }
 
 /* section */
 .even {
     background-color: var(--color-bg-section);
+}
+
+/* footer */
+footer {
+    background-color: var(--color-bg-footer);
+    color: var(--color-bg-main);
+    padding: 20px;    
+}
+#call-to-action > div,
+footer > div {
+    padding: 20px;
+}
+
+/* utility */
+.text-color {
+    color: var(--color-bg-main);
+}
+img {
+    width: 100%;
+}
+
+/* media query */
+@media screen and (min-width: 1200px){
+    header nav:hover ul {
+        display: flex;
+    }
+    header nav ul {
+        position: static;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+    }
+    i.fa-solid.fa-bars {
+        display: none;
+    }
 }
